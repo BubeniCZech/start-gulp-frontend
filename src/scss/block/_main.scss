@@ -1,0 +1,13 @@
+.main {
+  margin: 10px 0;
+
+  &__container {
+    display: flex;
+    min-height: 500px;
+    padding: 20px;
+    background-color: $tuatara;
+    border: $border-dark;
+    border-radius: $border-radius-box;
+    box-shadow: $box-dark-shadow;
+  }
+}

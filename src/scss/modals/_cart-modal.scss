@@ -1,0 +1,58 @@
+.cart-modal {
+  margin: 15px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__desc {
+    font-weight: 700;
+  }
+
+  &__wrapper {
+    @include flex-center;
+    margin-top: 20px;
+
+    &-empty {
+      .cart-empty-icon {
+        fill: $tuatara;
+      }
+
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__send {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+
+    &-btn {
+      @include button-reset;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      padding: 10px;
+      color: $text-light;
+      font-size: rem(14);
+      background-color: $tuatara;
+    }
+
+    &-total {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      padding: 10px;
+      color: $text-light;
+      font-size: rem(14);
+      background-color: $tuatara;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
