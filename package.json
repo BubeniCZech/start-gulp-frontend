@@ -28,14 +28,14 @@
   },
   "homepage": "https://github.com/BubeniCZech/start-gulp-frontend#readme",
   "devDependencies": {
-    "@babel/core": "^7.17.2",
+    "@babel/core": "^7.17.8",
     "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
-    "@babel/register": "^7.17.0",
-    "babel-loader": "^8.2.3",
-    "browser-sync": "^2.27.7",
+    "@babel/register": "^7.17.7",
+    "babel-loader": "^8.2.4",
+    "browser-sync": "^2.27.9",
     "del": "^6.0.0",
-    "eslint": "^8.8.0",
+    "eslint": "^8.11.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
     "gulp": "^4.0.2",
@@ -58,22 +58,22 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-webp": "^4.0.1",
     "gulp-webp-css-fixed": "^1.0.1",
-    "gulp-webp-html-nosvg": "^1.0.5",
+    "gulp-webp-html-nosvg": "^1.0.6",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^10.0.1",
     "imagemin-webp": "^7.0.0",
-    "sass": "^1.49.7",
-    "stylelint": "^14.5.0",
+    "sass": "^1.49.9",
+    "stylelint": "^14.6.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0",
-    "stylelint-scss": "^4.1.0",
-    "webpack": "^5.68.0",
+    "stylelint-scss": "^4.2.0",
+    "webpack": "^5.70.0",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "swiper": "^8.0.5"
+    "swiper": "^8.0.7"
   }
 }

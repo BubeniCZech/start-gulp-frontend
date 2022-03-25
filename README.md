@@ -7,7 +7,7 @@
 * [git](https://git-scm.com/)
 
 ## Instalace
-1. Klonujte úložiště ```git clone https://github.com/BubeniCZech/start-gulp-frontend.git .; rm -rf trunk .gitignore readme.md .git```
+1. Klonujte úložiště ```git clone https://github.com/BubeniCZech/gulp-starter-template.git .; rm -rf trunk .gitignore readme.md .git```
 2. Nainstalujte závislosti — npm i
 3. Spusťte vývojový server — npm run dev
 
