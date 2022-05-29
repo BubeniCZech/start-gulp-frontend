@@ -1,9 +1,9 @@
 .style-01 {
   position: relative;
   color: $text-light;
-  font-size: rem(50);
+  font-size: clamp(1.5rem, 1.1364rem + 1.8182vw, 2.5rem);
   font-family: $primary-font;
-  -webkit-text-stroke: 0.01rem rgba($black, 1);
+  -webkit-text-stroke: 0.1px rgba($black, 1);
   line-height: 1.2;
   letter-spacing: 2px;
   white-space: nowrap;
@@ -18,17 +18,13 @@
     overflow: hidden;
     color: rgba($accent, 1);
     border-right: 2px solid $accent;
-    animation: text 10s linear infinite;
+    animation: style-01 10s linear infinite;
     content: attr(data-text);
     -webkit-text-stroke: 0 rgba($tuatara, 1);
   }
-
-  @media screen and (max-width: 768px) {
-    font-size: rem(30);
-  }
 }
 
-@keyframes text {
+@keyframes style-01 {
   0% {
     width: 0;
   }

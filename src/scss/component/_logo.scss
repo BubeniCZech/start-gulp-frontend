@@ -2,8 +2,10 @@
   display: flex;
   flex: 1 0 0;
   margin-left: rem(20);
+  font-weight: 700;
 
   span {
+    margin-right: 10px;
     color: $accent;
     font-weight: 700;
     text-transform: uppercase;

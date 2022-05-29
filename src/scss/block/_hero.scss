@@ -1,12 +1,103 @@
 .hero__container {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 350px;
-  margin-top: -1px;
+  height: 100%;
   background-color: $tuatara;
-  border: $border-dark;
-  box-shadow: $box-dark-shadow;
+  border-top: $border-light;
+}
+
+.hero__left {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: $size;
+  height: 100%;
+  padding-top: $size;
+  background-color: $tuatara;
+  border-right: $border-light;
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
+}
+
+.hero__right {
+  @include flex-center;
+  position: relative;
+  height: 500px;
+  padding-left: $size;
+  overflow: hidden;
+  // background: darken($tuatara, 10%) url('@img/bg/bg-1.jpg') center center/cover no-repeat;
+  background-color: darken($tuatara, 10%);
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba($tuatara, 0.5) 0%, rgba($tuatara, 0.5) 50%, rgba($tuatara, 0.5) 100%);
+    content: '';
+  }
+
+  &-content {
+    z-index: 10;
+
+    p {
+      font-size: clamp(0.625rem, 0.4886rem + 0.6818vw, 1rem);
+      text-align: center;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    padding-left: 0;
+  }
+}
+
+.hero__bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  width: calc(100% - #{$size});
+  padding-left: $size;
+
+  @media screen and (max-width: 640px) {
+    padding: 0;
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  background-color: $tuatara;
+  border-top: $border-light;
+  border-right: 2px solid $accent;
+
+  &__link {
+    @include flex-center;
+    width: $size;
+    height: $size;
+    border-right: $border-light;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      background-color: lighten($tuatara, 10%);
+
+      .hero-buttons__icon {
+        fill: $text-light;
+      }
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease-in;
+    fill: $accent;
+  }
 }
